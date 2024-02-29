@@ -1,0 +1,471 @@
+/* common css */
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    
+  }
+
+body{
+    font-family: var(--font-family);
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+/* common css end */
+
+/* nav bar start */
+@media (min-width:320px) and (max-width:800px){
+    nav{
+        background-color: #fff;
+        box-shadow: 0px 4px 10px 0px rgba(0,0,0, 0.10);
+    }
+    #navbar li a{
+        text-align: center;
+    }
+}
+
+#navbar li a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    text-transform: uppercase;
+    padding: 18px 22px 5px;
+    position: relative;
+}
+
+#navbar li a::before {
+    content:"";
+    width: 0;
+    height: 1px;
+    background-color: #353535;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   transition: 0.3s;
+}
+
+#navbar li:hover a::before {
+    width: 100%;
+}
+/* nev bar end */
+
+/* banner ber start */
+@media (max-width:991px) {
+    #banner .contains h4{
+        font-size: 15px;
+    }
+    #banner .contains h1{
+        font-size: 34px;
+    }
+    #banner .contact a{
+        padding: 8px 20px;
+        display: inline-block;
+        border-radius:10px;
+    }
+
+
+
+}
+#banner .contains{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#banner .contains h4{
+padding: 120px 0 15px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #353535;
+}
+#banner .contains h1{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 64px;
+color: #353535;
+}
+#banner .contains p{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+color: #353535;
+padding-top: 25px;
+}
+
+#banner .image img{
+    padding-top: 60px;
+}
+#banner .contact{
+    padding: 50px 0 65px;
+
+}
+#banner .contact a{
+    border: 1px solid black;
+    padding: 16px 0px 15px 32px;
+    border-radius: 16px;
+    color:#484848;
+    transition: 0.5s;
+    margin: 0 20px;
+    display: inline-block;
+}
+#banner .contact a i{
+    padding: 5px 33px 5px 11px;
+
+}
+#banner .contact a:hover{
+    background-color: #FFCC00;
+    color: #fff;
+    border: none;
+}
+
+#banner .contact .download{
+    padding: 16px 0px 17px 18px;
+
+    border-radius: 16px;
+    color: #484848;
+}
+#banner .download a{
+    padding: 16px 0px 17px 18px;
+
+}
+
+#banner .download a i{
+    padding: 22px 19px 23px 11px;
+}
+#banner .contains .follow{
+    padding-bottom: 144px;
+}
+#banner .contains .follow a{
+    width: 48px;
+    height:48px ;
+    border-radius:50% ;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    background-color: #F4F3F3;
+    color: black;
+    transition: 0.3s;
+    display: inline-block;
+}
+#banner .contains .follow a:hover{
+    background-color: black;
+    color: white;
+}
+/* banner bar end */
+
+/* about bar start */
+@media (min-width:320px) and (max-width:991px){
+    #about .aboutimg img{
+        transform: scaleX(-1);
+    }
+}
+    
+
+#about{
+    background: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
+    }
+
+#about .aboutcnt{
+    padding:78px 0 0 60px;
+}
+#about .aboutcnt p{
+    padding: 26px 0 45px;
+}
+
+#about .aboutcnt a{
+    
+    padding: 17px 44px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #353535;
+    transition: 0.5s;
+    display: inline-block;
+}
+#about .aboutcnt a:hover{
+    background-color: black;
+    color: white;
+}
+#about .container{
+    position: relative;
+}
+#about .circle{
+   position: absolute;
+    right: 50px;
+    bottom: 0; 
+}
+
+/* about bar end */
+
+
+
+/* service bar start */
+#service{
+    padding: 151px 0 165px;
+}
+
+.service-card{
+border-radius: 20px;
+box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+background: #fff;
+text-align: center;
+padding: 39px 47px 57px;
+
+}
+.service-card h5{
+font-weight: 600;
+font-size: 22px;
+line-height: 180%;
+text-align: center;
+color: #353535;
+padding: 18px 0 14px;
+}
+.service-card p{
+font-weight: 400;
+font-size: 16px;
+line-height: 190%;
+text-align: center;
+color: #7a7a7a;
+}
+
+/* service bar end */
+
+/* branding bar start */
+
+#branding{
+    background: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
+}
+
+#branding .branding-cnt h3{
+font-weight: 700;
+font-size: 44px;
+color: #353535;
+}
+#branding .branding-cnt p{
+font-weight: 400;
+font-size: 18px;
+line-height: 190%;
+color: #353535;
+padding: 21px 0 35px;
+}
+#branding .branding-cnt a{
+    padding: 17px 44px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #353535;
+    transition: 0.5s;
+    display: inline-block;
+}
+#branding .branding-cnt a:hover{
+    background-color: black;
+    color: white;
+}
+#branding .container{
+    position: relative;
+}
+
+#branding .circle-2{
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+
+/* branding bar end */
+
+/* what do i help bar start */
+#what-do-i-help{
+    margin: 141px 0 24px;
+}
+#what-do-i-help .image{
+    display:flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    margin: 24px 0;
+    
+    
+}
+#what-do-i-help .image img{
+    padding: 17px 18px 18px 29px;
+}
+
+#what-do-i-help .image .contant-2 h4{
+    padding: 17px 18px ;
+}
+#what-do-i-help .image .contant-2 p{
+    padding:0 0 0 18px ;
+
+}
+#what-do-i-help .contains{
+    padding-left: 100px;
+}
+#what-do-i-help .contains h2{
+font-weight: 700;
+font-size: 50px;
+text-align: right;
+color: #353535;
+padding: 26px 0;
+}
+#what-do-i-help .contains p{
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+text-align: right;
+color: #353535;
+}
+/* what do i help bar end */
+
+/* experience bar start */
+#experiance h2{
+text-align: center;
+font-weight: 700;
+font-size: 50px;
+color: #353535;
+}
+
+#experiance .timeline{
+    padding-top: 100px;
+}
+.timeline .year{
+    padding: 21px 0 98px;
+    border-right: 1px dashed #7a7a7a;
+    position: relative;
+}
+.timeline .year::after{
+    content: "";
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    border: 2px dashed #7a7a7a;
+    position: absolute;
+    top: -21px;
+    right: -21px;
+    border-radius: 50%;
+}
+
+.timeline .year::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background-color: #52ab70;
+
+   position: absolute;
+    top:-10px;
+    right: -10px;
+    z-index: 9999;
+}
+
+
+
+
+.timeline .year h3{
+font-weight: 600;
+font-size: 24px;
+line-height: 180%;
+color: #353535;
+}
+.timeline .year p{
+font-weight: 500;
+font-size: 18px;
+line-height: 180%;
+color: #7a7a7a;
+}
+.timeline .titel h3{
+font-weight: 600;
+font-size: 24px;
+line-height: 180%;
+color: #353535;
+}
+.timeline .titel p{
+font-weight: 400;
+font-size: 18px;
+line-height: 200%;
+color: #7a7a7a;
+}
+
+
+
+
+/* experience bar end */
+
+/* common footer start */
+footer{
+    background-image: url(../images/Group\ 215.png);
+    margin-top: 190px;
+}
+
+footer .sandicon a{
+    background-color: #FFCC00;
+    padding: 16px 0px 15px 32px;
+    border-radius: 16px;
+    color: #ffff;
+    display: inline-block;
+}
+footer .sandicon a i{
+    padding: 5px 33px 5px 11px;
+}
+
+footer .container{
+    padding-top: 71px;
+    
+}
+
+footer .icons a {
+    width: 48px;
+    height:48px ;
+    border-radius:50% ;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    background-color: #484848;
+    color: #fff;
+    transition: 0.3s;
+    
+    
+}
+
+footer .icons a:hover{
+    background-color: #FFCC00;
+}
+
+footer .second-row{
+    padding: 94px 0 84px;
+}
+/* common footer end */
+
+
+
+
+
+
+
+
+
+
+
+
